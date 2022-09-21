@@ -3,9 +3,13 @@ python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
 
 2. А* пошук:
 	2.1. Мангеттенський шлях
+	python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
 
 	2.2. Звести А* до жадібного алгоритму
+	python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=gdastar,heuristic=manhattanHeuristic
 
 	2.3. Зібрати всі монети
+	python pacman.py -l trickySearch -p AStarFoodSearchAgent
 
 	2.4. Шлях по кутам
+	python pacman.py -l bigCorners -p AStarCornersAgent -z 0.5
